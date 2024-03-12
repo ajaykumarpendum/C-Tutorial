@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Please enter your Application Details");
+        Console.WriteLine("Please enter your name:");
+        string name = Console.ReadLine();
+        Console.WriteLine("Please enter your Age:");
+        int Age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Please enter your Gender M/F:");
+        string Gender = Console.ReadLine();
+if (Age<=45)
+{
+    Console.WriteLine("Hello {0} ({2})-Age:{1}\n Welcome to APTS", name,Age,Gender);
+}
+else
+{
+    Console.WriteLine("Hello {0} ({2})-Age:{1} your Application is inValid", name,Age,Gender);
+}
+    }
+}
